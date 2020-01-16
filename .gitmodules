@@ -1,0 +1,60 @@
+[submodule "FastFold"]
+        path = pack/git-plugins/start/FastFold
+        url = https://github.com/Konfekt/FastFold
+[submodule "vim-python-pep8-indent"]
+        path = pack/git-plugins/start/vim-python-pep8-indent
+        url = https://github.com/Vimjas/vim-python-pep8-indent
+[submodule "vim-mundo"]
+        path = pack/git-plugins/start/vim-mundo
+        url = https://github.com/simnalamburt/vim-mundo
+[submodule "ctrlp.vim"]
+        path = pack/git-plugins/start/ctrlp.vim
+        url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "vim-signify"]
+        path = pack/git-plugins/start/vim-signify
+        url = https://github.com/mhinz/vim-signify
+[submodule "vim-sensible"]
+        path = pack/git-plugins/start/vim-sensible
+        url = https://github.com/tpope/vim-sensible
+[submodule "ale"]
+        path = pack/git-plugins/start/ale
+        url = https://github.com/dense-analysis/ale.git
+[submodule "delimitmate"]
+        path = pack/git-plugins/start/delimitmate
+        url = https://github.com/raimondi/delimitmate
+[submodule "vim-misc"]
+        path = pack/git-plugins/start/vim-misc
+        url = https://github.com/xolox/vim-misc
+[submodule "Dockerfile.vim"]
+        path = pack/git-plugins/start/Dockerfile.vim
+        url = https://github.com/ekalinin/Dockerfile.vim
+[submodule "SimpylFold"]
+        path = pack/git-plugins/start/SimpylFold
+        url = https://github.com/tmhedberg/SimpylFold
+[submodule "vim-dispatch"]
+        path = pack/git-plugins/start/vim-dispatch
+        url = https://github.com/tpope/vim-dispatch
+[submodule "vim-unimpaired"]
+        path = pack/git-plugins/start/vim-unimpaired
+        url = https://github.com/tpope/vim-unimpaired
+[submodule "python-syntax"]
+        path = pack/git-plugins/start/python-syntax
+        url = https://github.com/vim-python/python-syntax
+[submodule "vim-fugitive"]
+        path = pack/git-plugins/start/vim-fugitive
+        url = https://github.com/tpope/vim-fugitive
+[submodule "vim-json"]
+        path = pack/git-plugins/start/vim-json
+        url = https://github.com/elzr/vim-json
+[submodule "ropevim"]
+        path = pack/git-plugins/start/ropevim
+        url = https://github.com/python-rope/ropevim
+[submodule "ultisnips"]
+        path = pack/git-plugins/start/ultisnips
+        url = https://github.com/SirVer/ultisnips
+[submodule "vim-isort"]
+        path = pack/git-plugins/start/vim-isort
+        url = https://github.com/fisadev/vim-isort
+[submodule "vim-surround"]
+        path = pack/git-plugins/start/vim-surround
+        url = https://github.com/tpope/vim-surround
