@@ -172,6 +172,11 @@ let g:powerline_pycmd="py3"
 
 " Config {{{
 
+" Solarized {{{
+
+let g:solarized_termcolors = 16
+
+" }}}
 
 " ALE {{{
 
@@ -186,6 +191,18 @@ let g:ale_linters = {
 let g:ale_completion_enabled = 1
 let g:ale_history_log_output = 1
 " let g:ale_lint_on_text_changed = 'normal'
+
+" }}}
+
+" vim-indent-guides {{{
+
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 " }}}
 

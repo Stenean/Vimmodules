@@ -61,3 +61,9 @@
 [submodule "pack/git-plugins/start/vim-surround"]
 	path = pack/git-plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "pack/git-plugins/start/vim-commentary"]
+	path = pack/git-plugins/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "pack/git-plugins/start/vim-indent-guides"]
+	path = pack/git-plugins/start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
