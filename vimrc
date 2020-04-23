@@ -51,6 +51,7 @@ set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set t_Co=256
 colorscheme solarized
+set background=dark
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 " Use spaces instead of tabs
@@ -166,7 +167,7 @@ vnoremap <silent> # :call VisualSelection('b')<CR>
 nnoremap <space> za
 vnoremap <space> zf
 
-nnoremap <C-g> :ALEGoToDefinition<CR>
+nnoremap <C-g> :LspDefinition<CR>
 
 let g:powerline_pycmd="py3"
 
@@ -175,22 +176,6 @@ let g:powerline_pycmd="py3"
 " Solarized {{{
 
 let g:solarized_termcolors = 16
-
-" }}}
-
-" ALE {{{
-
-let g:ale_set_balloons = 1
-let g:ale_echo_msg_format='[%linter%] %code: %%s'
-let g:ale_linters = {
-\   'javascript': ['eslint', 'tsserver'],
-"\   'python': ['pyls', 'flake8', 'mypy', 'pylint'],
-\   'python': ['pyls'],
-\   'cpp': ['clangd'],
-\}
-let g:ale_completion_enabled = 1
-let g:ale_history_log_output = 1
-" let g:ale_lint_on_text_changed = 'normal'
 
 " }}}
 
