@@ -55,9 +55,6 @@
 [submodule "pack/git-plugins/start/vim-surround"]
         path = pack/git-plugins/start/vim-surround
         url = https://github.com/tpope/vim-surround
-[submodule "pack/git-plugins/start/vim-surround"]
-	path = pack/git-plugins/start/vim-surround
-	url = https://github.com/tpope/vim-surround
 [submodule "pack/git-plugins/start/vim-commentary"]
 	path = pack/git-plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary

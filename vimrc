@@ -191,4 +191,41 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 " }}}
 
+" vim-lsp {{{
+
+let g:lsp_signs_enabled = 1         " enable signs
+let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
+let g:lsp_highlight_references_enabled = 0
+
+" let g:lsp_log_verbose = 1
+" let g:lsp_log_file = expand('~/vim-lsp.log')
+
+" }}}
+
+" asyncomplete.vim {{{
+
+let g:asyncomplete_auto_popup = 0
+
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+imap <c-space> <Plug>(asyncomplete_force_refresh)
+imap <C-@> <C-Space>
+
+" for asyncomplete.vim log
+" let g:asyncomplete_log_file = expand('~/asyncomplete.log')
+
+" }}}
+
+" UltiSnips {{{
+
+let g:UltiSnipsExpandTrigger="<meta>"
+let g:UltiSnipsRemoveSelectModeMappings = 1
+
+" }}}
+
+" ropevim {{{
+
+let g:ropevim_enable_shortcuts=0
+
+" }}}
+
 " }}}
