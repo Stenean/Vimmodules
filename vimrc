@@ -24,6 +24,7 @@ runtime! archlinux.vim
 python3 << ENDPYTHON
 import sys
 sys.path.insert(3, '/usr/lib/python3.8/site-packages')
+sys.path.insert(4, '/usr/lib/python3.9/site-packages')
 
 from powerline.vim import setup as powerline_setup
 powerline_setup()
