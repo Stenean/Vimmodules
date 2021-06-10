@@ -170,6 +170,8 @@ vnoremap <space> zf
 
 nnoremap <C-g> :LspDefinition<CR>
 
+inoremap jk <ESC>
+
 let g:powerline_pycmd="py3"
 
 " Config {{{
