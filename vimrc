@@ -47,6 +47,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 " UI {{{
 set number
+set relativenumber
 set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
