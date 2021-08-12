@@ -7,9 +7,6 @@
 [submodule "pack/git-plugins/start/vim-mundo"]
 	path = pack/git-plugins/start/vim-mundo
 	url = https://github.com/simnalamburt/vim-mundo
-[submodule "pack/git-plugins/start/ctrlp.vim"]
-	path = pack/git-plugins/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "pack/git-plugins/start/vim-signify"]
 	path = pack/git-plugins/start/vim-signify
 	url = https://github.com/mhinz/vim-signify

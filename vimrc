@@ -134,7 +134,7 @@ set magic
 set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
-" No annoying sound on errors
+" No annoying sound on errors {{{
 set noerrorbells
 set novisualbell
 set t_vb=
@@ -142,6 +142,7 @@ set tm=500
 set switchbuf=useopen
 set viewoptions=cursor,slash,unix
 set bsdir=current
+" }}}
 " Turn backup off, since most stuff is in SVN, git et.c anyway... {{{
 set nobackup
 set nowb
@@ -168,11 +169,30 @@ vnoremap <silent> # :call VisualSelection('b')<CR>
 nnoremap <space> za
 vnoremap <space> zf
 
+" Center screen after search
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" Fix indenting visual block
+vmap < <gv
+vmap > >gv
+
 nnoremap <C-g> :LspDefinition<CR>
 
 inoremap jk <ESC>
 
+nmap <C-P> :FZF<CR>
+
 let g:powerline_pycmd="py3"
+
+
+" Autocommands {{{
+autocmd FileType c,cpp,java,python autocmd BufWritePre <buffer> %s/\s\+$//e
+
+autocmd! FileType fzf
+autocmd  FileType fzf set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+" }}}
 
 " Config {{{
 
@@ -228,6 +248,22 @@ let g:UltiSnipsRemoveSelectModeMappings = 1
 " ropevim {{{
 
 let g:ropevim_enable_shortcuts=0
+
+" }}}
+
+" vim-isort {{{
+
+let g:vim_isort_python_version = 'python3'
+
+" }}}
+
+" FZF {{{
+
+let g:fzf_layout = { 'down': '30%' }
+let $FZF_DEFAULT_COMMAND = 'find . -type f 
+            \ -not -path "**/.git/**" 
+            \ -not -path "**/.tox/**" 
+            \ -not -name "*.pyc"'
 
 " }}}
 
