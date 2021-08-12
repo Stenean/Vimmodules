@@ -187,7 +187,7 @@ let g:powerline_pycmd="py3"
 
 
 " Autocommands {{{
-autocmd FileType c,cpp,java,python autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd BufWritePre *.py :%s/\s\+$//e
 
 autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
