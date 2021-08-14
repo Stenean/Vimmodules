@@ -178,8 +178,6 @@ nnoremap N Nzzzv
 vmap < <gv
 vmap > >gv
 
-nnoremap <C-g> :LspDefinition<CR>
-
 inoremap jk <ESC>
 
 nmap <C-P> :FZF<CR>
