@@ -213,7 +213,6 @@ endfunction
 
 " }}}
 
-
 " Autocommands {{{
 
 autocmd BufWritePre *.py :%s/\s\+$//e
