@@ -295,6 +295,8 @@ let g:fzf_layout = { 'down': '30%' }
 let $FZF_DEFAULT_COMMAND = 'find . -type f 
             \ -not -path "**/.git/**" 
             \ -not -path "**/.tox/**" 
+            \ -not -path "**/node_modules/**"
+            \ -not -path "**/site-packages/**"
             \ -not -name "*.pyc"'
 
 " }}}
