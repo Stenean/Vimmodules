@@ -20,18 +20,6 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
-" => Powerline setup {{{
-python3 << ENDPYTHON
-import sys
-sys.path.insert(3, '/usr/lib/python3.8/site-packages')
-sys.path.insert(4, '/usr/lib/python3.9/site-packages')
-
-from powerline.vim import setup as powerline_setup
-powerline_setup()
-del powerline_setup
-ENDPYTHON
-" }}}
-
 " Syntax and file type setup {{{
 syntax on
 syntax enable
