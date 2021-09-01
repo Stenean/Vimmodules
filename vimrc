@@ -72,7 +72,6 @@ set splitright
 " Fold optimisations {{{
 syntax sync minlines=256
 set synmaxcol=300
-set re=1
 " }}}
 " Mouse support {{{
 set mouse=a
