@@ -285,11 +285,11 @@ let g:vim_isort_python_version = 'python3'
 
 let g:fzf_layout = { 'down': '30%' }
 let $FZF_DEFAULT_COMMAND = 'find . -type f 
-            \ -not -path "**/.git/**" 
-            \ -not -path "**/.tox/**" 
-            \ -not -path "**/node_modules/**"
-            \ -not -path "**/site-packages/**"
-            \ -not -name "*.pyc"'
+            \ \( -path "**/.git/**" -prune -o
+            \    -path "**/.tox/**" -prune -o
+            \    -path "**/node_modules/**" -prune -o
+            \    -path "**/site-packages/**" -prune -o
+            \    -not -name "*.pyc" -print \)'
 
 " }}}
 
