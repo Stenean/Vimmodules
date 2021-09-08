@@ -284,12 +284,13 @@ let g:vim_isort_python_version = 'python3'
 " FZF {{{
 
 let g:fzf_layout = { 'down': '30%' }
-let $FZF_DEFAULT_COMMAND = 'find . -type f 
-            \ \( -path "**/.git/**" -prune -o
-            \    -path "**/.tox/**" -prune -o
-            \    -path "**/node_modules/**" -prune -o
-            \    -path "**/site-packages/**" -prune -o
-            \    -not -name "*.pyc" -print \)'
+
+let s:throwaway = system('git status')
+if v:shell_error == 0
+  let $FZF_DEFAULT_COMMAND = 'git ls-tree --full-tree -r --name-only HEAD'
+else
+  let $FZF_DEFAULT_COMMAND = 'find . -type f -not -name "*.pyc"'
+endif
 
 " }}}
 
