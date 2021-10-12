@@ -17,6 +17,13 @@ runtime! archlinux.vim
 " Or better yet, read /usr/share/vim/vim80/vimrc_example.vim or the vim manual
 " and configure vim to your own liking!
 
+py3 <<EOF
+
+import sys
+sys.path.append('/usr/lib/python3.9/site-packages')
+
+EOF
+
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
@@ -287,7 +294,8 @@ let g:fzf_layout = { 'down': '30%' }
 
 let s:throwaway = system('git status')
 if v:shell_error == 0
-  let $FZF_DEFAULT_COMMAND = 'git ls-tree --full-tree -r --name-only HEAD'
+  " let $FZF_DEFAULT_COMMAND = 'git ls-tree --full-tree -r --name-only HEAD'
+  let $FZF_DEFAULT_COMMAND = 'git ls-files --recurse-submodules -c'
 else
   let $FZF_DEFAULT_COMMAND = 'find . -type f -not -name "*.pyc"'
 endif
