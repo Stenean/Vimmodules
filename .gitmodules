@@ -82,3 +82,12 @@
 [submodule "pack/git-plugins/start/vim-toml"]
 	path = pack/git-plugins/start/vim-toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule "pack/git-plugins/start/vim-buffet"]
+	path = pack/git-plugins/start/vim-buffet
+	url = https://github.com/bagrat/vim-buffet.git
+[submodule "pack/git-plugins/start/vim-devicons"]
+	path = pack/git-plugins/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/git-plugins/start/vim-startify"]
+	path = pack/git-plugins/start/vim-startify
+	url = https://github.com/mhinz/vim-startify.git

@@ -36,7 +36,7 @@ filetype plugin indent on
 " Set utf8 as standard encoding and en_US as the standard language {{{
 let $LANG='en'
 set langmenu=en
-set encoding=utf8
+set encoding=UTF-8
 " }}}
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -181,6 +181,35 @@ nnoremap <silent> <leader>DP :exe ":profile pause"<cr>
 nnoremap <silent> <leader>DC :exe ":profile continue"<cr>
 nnoremap <silent> <leader>DQ :exe ":profile pause"<cr>:noautocmd qall!<cr>
 
+" vim-buffet buffer switching maps
+
+noremap <Tab> :bn<CR>
+noremap <S-Tab> :bp<CR>
+noremap <Leader><Tab> :Bw<CR>
+noremap <Leader><S-Tab> :Bw!<CR>
+noremap <C-t> :tabnew split<CR>
+
+nmap <leader>1 <Plug>BuffetSwitch(1)
+nmap <leader>2 <Plug>BuffetSwitch(2)
+nmap <leader>3 <Plug>BuffetSwitch(3)
+nmap <leader>4 <Plug>BuffetSwitch(4)
+nmap <leader>5 <Plug>BuffetSwitch(5)
+nmap <leader>6 <Plug>BuffetSwitch(6)
+nmap <leader>7 <Plug>BuffetSwitch(7)
+nmap <leader>8 <Plug>BuffetSwitch(8)
+nmap <leader>9 <Plug>BuffetSwitch(9)
+nmap <leader>10 <Plug>BuffetSwitch(10)
+nmap <leader>11 <Plug>BuffetSwitch(11)
+nmap <leader>12 <Plug>BuffetSwitch(12)
+nmap <leader>13 <Plug>BuffetSwitch(13)
+nmap <leader>14 <Plug>BuffetSwitch(14)
+nmap <leader>15 <Plug>BuffetSwitch(15)
+nmap <leader>16 <Plug>BuffetSwitch(16)
+nmap <leader>17 <Plug>BuffetSwitch(17)
+nmap <leader>18 <Plug>BuffetSwitch(18)
+nmap <leader>19 <Plug>BuffetSwitch(19)
+nmap <leader>20 <Plug>BuffetSwitch(20)
+
 let g:powerline_pycmd="py3"
 
 " Functions {{{ 
@@ -299,6 +328,15 @@ if v:shell_error == 0
 else
   let $FZF_DEFAULT_COMMAND = 'find . -type f -not -name "*.pyc"'
 endif
+
+" }}}
+
+" vim-buffet {{{
+
+let g:buffet_powerline_separators = 1
+let g:buffet_show_index = 1
+let g:buffet_max_plug = 1
+let g:buffet_use_devicons = 1
 
 " }}}
 
