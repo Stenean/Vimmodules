@@ -91,3 +91,9 @@
 [submodule "pack/git-plugins/start/vim-startify"]
 	path = pack/git-plugins/start/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
+[submodule "pack/git-plugins/start/vim-cutlass"]
+	path = pack/git-plugins/start/vim-cutlass
+	url = https://github.com/svermeulen/vim-cutlass.git
+[submodule "pack/git-plugins/start/vim-speeddating"]
+	path = pack/git-plugins/start/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
