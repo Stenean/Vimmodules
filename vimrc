@@ -156,7 +156,9 @@ set undodir=/$HOME/.vim/undo/
 set viewdir=/$HOME/.vim/view/
 " }}}
 
-" Visual mode pressing * or # searches for the current selection
+" Keybindings {{{
+
+" Visual mode pressing * or # searches for the current selection {{{
 " Super useful! From an idea by Michael Naumann
 vnoremap <silent> * :call VisualSelection('f')<CR>
 vnoremap <silent> # :call VisualSelection('b')<CR>
@@ -164,11 +166,15 @@ vnoremap <silent> # :call VisualSelection('b')<CR>
 nnoremap <space> za
 vnoremap <space> zf
 
-" Center screen after search
+" }}}
+
+" Center screen after search {{{
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-" Fix indenting visual block
+" }}}
+
+" Fix indenting visual block {{{
 vmap < <gv
 vmap > >gv
 
@@ -181,7 +187,9 @@ nnoremap <silent> <leader>DP :exe ":profile pause"<cr>
 nnoremap <silent> <leader>DC :exe ":profile continue"<cr>
 nnoremap <silent> <leader>DQ :exe ":profile pause"<cr>:noautocmd qall!<cr>
 
-" vim-buffet buffer switching maps
+" }}}
+
+" vim-buffet buffer switching maps {{{
 
 noremap <Tab> :bn<CR>
 noremap <S-Tab> :bp<CR>
@@ -210,15 +218,22 @@ nmap <leader>18 <Plug>BuffetSwitch(18)
 nmap <leader>19 <Plug>BuffetSwitch(19)
 nmap <leader>20 <Plug>BuffetSwitch(20)
 
-" vim-mundo toggle
+" }}}
+
+" vim-mundo toggle {{{
 
 noremap <Leader>u :MundoToggle<CR>
 
+" }}}
 
-" vim-qf toggles
+" vim-qf toggles {{{
 
 noremap <Leader>c <Plug>(qf_qf_toggle)
 noremap <Leader>l <Plug>(qf_loc_toggle)
+
+" }}}
+
+" }}}
 
 let g:powerline_pycmd="py3"
 
@@ -347,6 +362,9 @@ let g:buffet_powerline_separators = 1
 let g:buffet_show_index = 1
 let g:buffet_max_plug = 20
 let g:buffet_use_devicons = 1
+let g:buffet_tab_icon = "\u27f1"
+let g:buffet_left_trunc_icon = "\u2b98"
+let g:buffet_right_trunc_icon = "\u2b9a"
 
 " }}}
 
