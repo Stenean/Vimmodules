@@ -210,6 +210,16 @@ nmap <leader>18 <Plug>BuffetSwitch(18)
 nmap <leader>19 <Plug>BuffetSwitch(19)
 nmap <leader>20 <Plug>BuffetSwitch(20)
 
+" vim-mundo toggle
+
+noremap <Leader>u :MundoToggle<CR>
+
+
+" vim-qf toggles
+
+noremap <Leader>c <Plug>(qf_qf_toggle)
+noremap <Leader>l <Plug>(qf_loc_toggle)
+
 let g:powerline_pycmd="py3"
 
 " Functions {{{ 
@@ -335,7 +345,7 @@ endif
 
 let g:buffet_powerline_separators = 1
 let g:buffet_show_index = 1
-let g:buffet_max_plug = 1
+let g:buffet_max_plug = 20
 let g:buffet_use_devicons = 1
 
 " }}}

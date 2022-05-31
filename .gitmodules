@@ -97,3 +97,6 @@
 [submodule "pack/git-plugins/start/vim-speeddating"]
 	path = pack/git-plugins/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
+[submodule "pack/git-plugins/start/vim-qf"]
+	path = pack/git-plugins/start/vim-qf
+	url = https://github.com/romainl/vim-qf.git
