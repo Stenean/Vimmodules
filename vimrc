@@ -19,8 +19,14 @@ runtime! archlinux.vim
 
 py3 <<EOF
 
+import os
 import sys
-sys.path.append('/usr/lib/python3.9/site-packages')
+
+
+pythons = [p for p in os.listdir('/usr/lib/') if p.startswith('python3.')]
+for python in sorted(pythons, key=lambda x: int(x.replace('python3.', ''))):
+  sys.path.append(os.path.join('/usr', 'lib', python, 'site-packages'))
+
 
 EOF
 
@@ -248,12 +254,13 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> gS <plug>(lsp-workspace-symbol-search)
     nmap <buffer> gr <plug>(lsp-references)
     nmap <buffer> gi <plug>(lsp-implementation)
+    nmap <buffer> gt <plug>(lsp-type-definition)
     nmap <buffer> <leader>rn <plug>(lsp-rename)
     nmap <buffer> [g <plug>(lsp-previous-diagnostic)
     nmap <buffer> ]g <plug>(lsp-next-diagnostic)
     nmap <buffer> K <plug>(lsp-hover)
-    inoremap <buffer> <expr><c-f> lsp#scroll(+4)
-    inoremap <buffer> <expr><c-d> lsp#scroll(-4)
+    nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
+    nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
 
     let g:lsp_format_sync_timeout = 1000
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
@@ -365,6 +372,12 @@ let g:buffet_use_devicons = 1
 let g:buffet_tab_icon = "\u27f1"
 let g:buffet_left_trunc_icon = "\u2b98"
 let g:buffet_right_trunc_icon = "\u2b9a"
+
+" }}}
+
+" vim-startify {{{
+
+let g:startify_change_to_dir = 0
 
 " }}}
 
