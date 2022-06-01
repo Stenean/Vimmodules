@@ -25,9 +25,6 @@
 [submodule "pack/git-plugins/start/SimpylFold"]
 	path = pack/git-plugins/start/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold
-[submodule "pack/git-plugins/start/vim-dispatch"]
-	path = pack/git-plugins/start/vim-dispatch
-	url = https://github.com/tpope/vim-dispatch
 [submodule "pack/git-plugins/start/vim-unimpaired"]
 	path = pack/git-plugins/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired

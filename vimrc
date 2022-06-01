@@ -381,4 +381,10 @@ let g:startify_change_to_dir = 0
 
 " }}}
 
+" python-syntax {{{
+
+let g:python_highlight_all = 1
+
+" }}}
+
 " }}}
