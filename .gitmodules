@@ -97,3 +97,9 @@
 [submodule "pack/git-plugins/start/vim-qf"]
 	path = pack/git-plugins/start/vim-qf
 	url = https://github.com/romainl/vim-qf.git
+[submodule "pack/git-plugins/start/vim-polyglot"]
+	path = pack/git-plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "pack/git-plugins/start/ale"]
+	path = pack/git-plugins/start/ale
+	url = https://github.com/dense-analysis/ale.git

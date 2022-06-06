@@ -243,7 +243,7 @@ noremap <Leader>l <Plug>(qf_loc_toggle)
 
 let g:powerline_pycmd="py3"
 
-" Functions {{{ 
+" Functions {{{
 
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
@@ -264,15 +264,13 @@ function! s:on_lsp_buffer_enabled() abort
 
     let g:lsp_format_sync_timeout = 1000
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
-    
+
     " refer to doc to add more commands
 endfunction
 
 " }}}
 
 " Autocommands {{{
-
-autocmd BufWritePre *.py :%s/\s\+$//e
 
 autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
@@ -311,6 +309,22 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 let g:lsp_signs_enabled = 1         " enable signs
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 let g:lsp_highlight_references_enabled = 0
+let g:lsp_diagnostics_enabled = 0
+let g:ale_sign_highlight_linenrs = 1
+let g:ale_virtualtext_cursor = 0
+
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+
+let g:lsp_settings = {
+\   'pyls': {
+\     'workspace_config': {
+\       'pyls': {
+\         'configurationSources': ['flake8']
+\       }
+\     }
+\   },
+\}
 
 " let g:lsp_log_verbose = 1
 " let g:lsp_log_file = expand('~/vim-lsp.log')
@@ -384,6 +398,41 @@ let g:startify_change_to_dir = 0
 " python-syntax {{{
 
 let g:python_highlight_all = 1
+
+" }}}
+
+" FastFold {{{
+
+let g:markdown_folding = 1
+let g:rst_fold_enabled = 1
+let g:tex_fold_enabled = 1
+let g:vimsyn_folding = 'af'
+let g:xml_syntax_folding = 1
+let g:javaScript_fold = 1
+let g:sh_fold_enabled= 7
+let g:zsh_fold_enable = 1
+let g:ruby_fold = 1
+let g:perl_fold = 1
+let g:perl_fold_blocks = 1
+let g:r_syntax_folding = 1
+let g:rust_fold = 1
+let g:php_folding = 1
+let g:fortran_fold=1
+let g:clojure_fold = 1
+let g:baan_fold=1
+
+" }}}
+
+" Ale {{{
+
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_disable_lsp = 1
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = 'E>'
+let g:ale_sign_warning = 'W>'
 
 " }}}
 
