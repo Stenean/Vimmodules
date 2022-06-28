@@ -324,6 +324,9 @@ let g:lsp_settings = {
 \       }
 \     }
 \   },
+\   'typescript-language-server': {
+\     'blocklist': []
+\   },
 \}
 
 " let g:lsp_log_verbose = 1
