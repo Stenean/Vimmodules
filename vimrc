@@ -112,6 +112,8 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 set wildmenu
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
+" Show command options as list
+set wildoptions=pum
 " A buffer becomes hidden when it is abandoned
 set hid
 " Configure backspace so it acts as it should act
