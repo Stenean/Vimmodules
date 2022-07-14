@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/opt/shell_setup/bin'
+let g:netrw_dirhist_1='/opt/shell_setup'
+let g:netrw_dirhist_0='/home/jj/Projects/work/aw-core/src/infrastructure'
+let g:netrw_dirhist_9='/home/jj/Projects/work/aw-core'
+let g:netrw_dirhist_8='/home/jj/Projects/work/aw-core/frontend2/account/src/permissions/components'
+let g:netrw_dirhist_7='/home/jj/Projects/work/aw-core/frontend2/account/src/permissions'
+let g:netrw_dirhist_6='/home/jj/Projects/work/aw-core/frontend2/account/src'
+let g:netrw_dirhist_5='/home/jj/Projects/work/aw-core/frontend2/account'
+let g:netrw_dirhist_4='/home/jj/Projects/work/aw-core/frontend2'
+let g:netrw_dirhist_3='/home/jj/Projects/work/aw-core'
