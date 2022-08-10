@@ -67,9 +67,9 @@ set tabstop=8
 set softtabstop=4
 " Linebreak on 500 characters
 set lbr
-set tw=99
+set tw=119
 " Color column for 100 characters
-set colorcolumn=100
+set colorcolumn=120
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
@@ -430,6 +430,7 @@ let g:baan_fold=1
 
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['black']
 \}
 let g:ale_fix_on_save = 1
 let g:ale_disable_lsp = 1
