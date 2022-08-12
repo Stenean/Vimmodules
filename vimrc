@@ -1,4 +1,4 @@
-" vim: set ts=2 sw=2 sts=2 et fdm=marker:
+" vim: set ts=2 sw=2 sts=2 et foldmethod=marker foldmarker={{{,}}}
 " All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
 " /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
 " you can find below.  If you wish to change any of those settings, you should
