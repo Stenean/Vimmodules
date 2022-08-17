@@ -386,9 +386,6 @@ let g:buffet_powerline_separators = 1
 let g:buffet_show_index = 1
 let g:buffet_max_plug = 20
 let g:buffet_use_devicons = 1
-let g:buffet_tab_icon = "\u27f1"
-let g:buffet_left_trunc_icon = "\u2b98"
-let g:buffet_right_trunc_icon = "\u2b9a"
 
 " }}}
 
@@ -430,7 +427,7 @@ let g:baan_fold=1
 
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'python': ['black']
+\   'python': ['black'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_disable_lsp = 1
