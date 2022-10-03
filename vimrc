@@ -201,8 +201,8 @@ nnoremap <silent> <leader>DQ :exe ":profile pause"<cr>:noautocmd qall!<cr>
 
 noremap <Leader><Tab> :bn<CR>
 noremap <Leader><S-Tab> :bp<CR>
-" noremap <Leader><Tab> :Bw<CR>
-" noremap <Leader><S-Tab> :Bw!<CR>
+noremap <Leader>tc :Bw<CR>
+noremap <Leader>tc! :Bw!<CR>
 noremap <C-t> :tabnew split<CR>
 
 nmap <leader>1 <Plug>BuffetSwitch(1)
