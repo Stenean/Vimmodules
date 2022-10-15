@@ -24,7 +24,7 @@ import sys
 
 
 pythons = [p for p in os.listdir('/usr/lib/') if p.startswith('python3.')]
-for python in sorted(pythons, key=lambda x: int(x.replace('python3.', ''))):
+for python in sorted(pythons, key=lambda x: int(x.replace('python3.', '')), reverse=True):
   sys.path.append(os.path.join('/usr', 'lib', python, 'site-packages'))
 
 
