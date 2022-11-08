@@ -40,9 +40,6 @@
 [submodule "pack/git-plugins/start/ropevim"]
 	path = pack/git-plugins/start/ropevim
 	url = https://github.com/python-rope/ropevim
-[submodule "pack/git-plugins/start/ultisnips"]
-	path = pack/git-plugins/start/ultisnips
-	url = https://github.com/SirVer/ultisnips
 [submodule "pack/git-plugins/start/vim-isort"]
 	path = pack/git-plugins/start/vim-isort
 	url = https://github.com/fisadev/vim-isort
@@ -67,9 +64,6 @@
 [submodule "pack/git-plugins/start/vim-lsp-settings"]
 	path = pack/git-plugins/start/vim-lsp-settings
 	url = https://github.com/mattn/vim-lsp-settings
-[submodule "pack/git-plugins/start/vim-lsp-ultisnips"]
-	path = pack/git-plugins/start/vim-lsp-ultisnips
-	url = https://github.com/thomasfaingnaert/vim-lsp-ultisnips
 [submodule "pack/git-plugins/start/vim-lsp-snippets"]
 	path = pack/git-plugins/start/vim-lsp-snippets
 	url = https://github.com/thomasfaingnaert/vim-lsp-snippets
