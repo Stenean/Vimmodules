@@ -97,3 +97,6 @@
 [submodule "pack/git-plugins/start/diffconflicts"]
 	path = pack/git-plugins/start/diffconflicts
 	url = https://github.com/whiteinge/diffconflicts
+[submodule "pack/git-plugins/start/vim-wayland-clipboard"]
+	path = pack/git-plugins/start/vim-wayland-clipboard
+	url = https://github.com/jasonccox/vim-wayland-clipboard.git
