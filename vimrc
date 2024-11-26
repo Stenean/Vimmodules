@@ -17,19 +17,6 @@ runtime! archlinux.vim
 " Or better yet, read /usr/share/vim/vim80/vimrc_example.vim or the vim manual
 " and configure vim to your own liking!
 
-py3 <<EOF
-
-import os
-import sys
-
-
-pythons = [p for p in os.listdir('/usr/lib/') if p.startswith('python3.')]
-for python in sorted(pythons, key=lambda x: int(x.replace('python3.', '')), reverse=True):
-  sys.path.append(os.path.join('/usr', 'lib', python, 'site-packages'))
-
-
-EOF
-
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
