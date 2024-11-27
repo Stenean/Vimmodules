@@ -1,4 +1,5 @@
-" vim: set ts=2 sw=2 sts=2 et foldmethod=marker foldmarker={{{,}}}
+" vim:fdm=marker:fmr={{{,}}}
+" vim: set ts=2 sw=2 sts=2 et
 " All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
 " /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
 " you can find below.  If you wish to change any of those settings, you should
@@ -296,22 +297,28 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 let g:lsp_signs_enabled = 1         " enable signs
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
-let g:lsp_highlight_references_enabled = 0
+let g:lsp_highlight_references_enabled = 1
 let g:lsp_diagnostics_enabled = 1
+let g:lsp_diagnostics_virtual_text_enabled = 0
 
 let &t_Cs = "\e[4:3m"
 let &t_Ce = "\e[4:0m"
 
 let g:lsp_settings = {
 \   'pylsp-all': {
-\     'args': ['-vv', '--log-file', '/Users/jakub.mach-gapski/pylsp.log'],
 \     'workspace_config': {
-\       'pyls': {
-\         'configurationSources': ['flake8']
-\       },
-\       'plugins': {
-\         'black': {
-\           'enabled': 1
+\       'pylsp': {
+\         'configurationSources': ['flake8'],
+\         'plugins': {
+\           'black': {
+\             'enabled': 1
+\           },
+\           'flake8': {
+\             'enabled': 1
+\           },
+\           'pycodestyle': {
+\             'enabled': 0
+\           },
 \         },
 \       },
 \     }
@@ -320,6 +327,8 @@ let g:lsp_settings = {
 \     'blocklist': []
 \   },
 \}
+
+"\     'args': ['-vv', '--log-file', '/Users/jakub.mach-gapski/pylsp.log'],
 
 " let g:lsp_log_verbose = 1
 " let g:lsp_log_file = expand('~/vim-lsp.log')
@@ -394,6 +403,8 @@ let g:python_highlight_all = 1
 " }}}
 
 " FastFold {{{
+
+let g:fastfold_fdmhook = 1
 
 let g:markdown_folding = 1
 let g:rst_fold_enabled = 1
