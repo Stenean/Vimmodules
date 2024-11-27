@@ -250,7 +250,8 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> K <plug>(lsp-hover)
 
     let g:lsp_format_sync_timeout = 1000
-    autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+    autocmd! BufWritePre *py,*.rs,*.go call execute('LspDocumentFormatSync')
+    autocmd! User lsp_diagnostics_updated call execute('LspDocumentDiagnostics')
 
     " refer to doc to add more commands
 endfunction
@@ -296,19 +297,23 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 let g:lsp_signs_enabled = 1         " enable signs
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 let g:lsp_highlight_references_enabled = 0
-let g:lsp_diagnostics_enabled = 0
-let g:ale_sign_highlight_linenrs = 1
-let g:ale_virtualtext_cursor = 0
+let g:lsp_diagnostics_enabled = 1
 
 let &t_Cs = "\e[4:3m"
 let &t_Ce = "\e[4:0m"
 
 let g:lsp_settings = {
-\   'pyls': {
+\   'pylsp-all': {
+\     'args': ['-vv', '--log-file', '/Users/jakub.mach-gapski/pylsp.log'],
 \     'workspace_config': {
 \       'pyls': {
 \         'configurationSources': ['flake8']
-\       }
+\       },
+\       'plugins': {
+\         'black': {
+\           'enabled': 1
+\         },
+\       },
 \     }
 \   },
 \   'typescript-language-server': {
@@ -407,20 +412,6 @@ let g:php_folding = 1
 let g:fortran_fold=1
 let g:clojure_fold = 1
 let g:baan_fold=1
-
-" }}}
-
-" Ale {{{
-
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'python': ['black'],
-\}
-let g:ale_fix_on_save = 1
-let g:ale_disable_lsp = 1
-let g:ale_sign_column_always = 1
-let g:ale_sign_error = 'E>'
-let g:ale_sign_warning = 'W>'
 
 " }}}
 

@@ -91,9 +91,6 @@
 [submodule "pack/git-plugins/start/vim-polyglot"]
 	path = pack/git-plugins/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "pack/git-plugins/start/ale"]
-	path = pack/git-plugins/start/ale
-	url = https://github.com/dense-analysis/ale.git
 [submodule "pack/git-plugins/start/diffconflicts"]
 	path = pack/git-plugins/start/diffconflicts
 	url = https://github.com/whiteinge/diffconflicts
