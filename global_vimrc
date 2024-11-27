@@ -1,0 +1,6 @@
+source /usr/share/vim/vimrc
+source /opt/vim/vimrc
+set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
+set rtp+=$HOME/.pyenv/versions/3.10.15/lib/python3.10/site-packages/powerline/bindings/vim
+set rtp+=~/.fzf
