@@ -97,3 +97,12 @@
 [submodule "pack/git-plugins/start/vim-wayland-clipboard"]
 	path = pack/git-plugins/start/vim-wayland-clipboard
 	url = https://github.com/jasonccox/vim-wayland-clipboard.git
+[submodule "pack/git-plugins/start/UltiSnips"]
+	path = pack/git-plugins/start/UltiSnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "pack/git-plugins/start/asyncomplete-ultisnips.vim"]
+	path = pack/git-plugins/start/asyncomplete-ultisnips.vim
+	url = https://github.com/prabirshrestha/asyncomplete-ultisnips.vim
+[submodule "pack/git-plugins/start/vim-snippets"]
+	path = pack/git-plugins/start/vim-snippets
+	url = https://github.com/honza/vim-snippets

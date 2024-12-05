@@ -346,12 +346,25 @@ imap <C-@> <C-Space>
 " for asyncomplete.vim log
 " let g:asyncomplete_log_file = expand('~/asyncomplete.log')
 
+" additional completion source registration {{{
+
+call asyncomplete#register_source(asyncomplete#sources#ultisnips#get_source_options({
+    \ 'name': 'ultisnips',
+    \ 'allowlist': ['*'],
+    \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
+    \ }))
+
+" }}}
+
 " }}}
 
 " UltiSnips {{{
 
-let g:UltiSnipsExpandTrigger="<meta>"
-let g:UltiSnipsRemoveSelectModeMappings = 1
+let g:UltiSnipsExpandTrigger="<c-e>"
+let g:UltiSnipsListSnippets="<S-tab>"
+
+" let g:UltiSnipsRemoveSelectModeMappings = 1
+let g:UltiSnipsEditSplit="vertical"
 
 " }}}
 
