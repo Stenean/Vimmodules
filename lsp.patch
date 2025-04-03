@@ -1,0 +1,12 @@
+diff --git a/autoload/lsp/internal/diagnostics/document_diagnostics_command.vim b/autoload/lsp/internal/diagnostics/document_diagnostics_command.vim
+index cc43b94..a3a0e4b 100644
+--- a/autoload/lsp/internal/diagnostics/document_diagnostics_command.vim
++++ b/autoload/lsp/internal/diagnostics/document_diagnostics_command.vim
+@@ -35,6 +35,6 @@ function! lsp#internal#diagnostics#document_diagnostics_command#do(options) abor
+     else
+         call setloclist(0, l:result)
+         echo 'Retrieved diagnostics results'
+-        botright lopen
++        " botright lopen
+     endif
+ endfunction
