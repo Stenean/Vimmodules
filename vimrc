@@ -320,6 +320,9 @@ let g:lsp_settings = {
 \           'pycodestyle': {
 \             'enabled': 0
 \           },
+\           'pyflakes': {
+\             'enabled': 0
+\           },
 \         },
 \       },
 \     }
