@@ -106,3 +106,6 @@
 [submodule "pack/git-plugins/start/vim-snippets"]
 	path = pack/git-plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets
+[submodule "pack/git-plugins/start/llama.vim"]
+	path = pack/git-plugins/start/llama.vim
+	url = https://github.com/ggml-org/llama.vim.git
