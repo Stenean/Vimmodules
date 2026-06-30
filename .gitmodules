@@ -109,3 +109,9 @@
 [submodule "pack/git-plugins/start/llama.vim"]
 	path = pack/git-plugins/start/llama.vim
 	url = https://github.com/ggml-org/llama.vim.git
+[submodule "pack/git-plugins/start/vim-airline"]
+	path = pack/git-plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/git-plugins/start/vim-airline-themes"]
+	path = pack/git-plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes

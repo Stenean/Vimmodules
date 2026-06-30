@@ -231,8 +231,6 @@ noremap <Leader>l <Plug>(qf_loc_toggle)
 
 " }}}
 
-let g:powerline_pycmd="py3"
-
 " Functions {{{
 
 function! s:on_lsp_buffer_enabled() abort
@@ -440,6 +438,16 @@ let g:php_folding = 1
 let g:fortran_fold=1
 let g:clojure_fold = 1
 let g:baan_fold=1
+
+" }}}
+
+" vim-airline {{{
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 
 " }}}
 
