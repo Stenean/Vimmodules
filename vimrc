@@ -305,6 +305,7 @@ let &t_Ce = "\e[4:0m"
 
 let g:lsp_settings = {
 \   'pylsp-all': {
+\     'disabled': 1,
 \     'workspace_config': {
 \       'pylsp': {
 \         'configurationSources': ['flake8'],
@@ -328,7 +329,24 @@ let g:lsp_settings = {
 \   'typescript-language-server': {
 \     'blocklist': []
 \   },
+\   'ruff': {
+\     'disabled': 0,
+\     'initialization_options': {
+\       'hoverProvider': 0,
+\       'settings': {
+\         'lineLength': 120
+\       }
+\     },
+\   },
+\   'ty': {
+\     'disabled': 0
+\   },
+\   'zuben': {
+\     'disabled': 1
+\   }
 \}
+
+let g:lsp_settings_filetype_python = ['ruff', 'ty']
 
 "\     'args': ['-vv', '--log-file', '/Users/jakub.mach-gapski/pylsp.log'],
 
