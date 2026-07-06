@@ -115,3 +115,6 @@
 [submodule "pack/git-plugins/start/vim-airline-themes"]
 	path = pack/git-plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/git-plugins/start/vim-healthcheck"]
+	path = pack/git-plugins/start/vim-healthcheck
+	url = https://github.com/rhysd/vim-healthcheck.git
