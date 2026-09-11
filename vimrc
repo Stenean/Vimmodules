@@ -40,7 +40,7 @@ set relativenumber
 set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
-set t_Co=256
+" set t_Co=256
 colorscheme solarized
 set background=dark
 " Set 7 lines to the cursor - when moving vertically using j/k
@@ -275,8 +275,9 @@ augroup END
 
 " Solarized {{{
 
-" let g:solarized_termcolors = 16
+" let g:solarized_termcolors = 256
 let g:solarized_extra_hi_groups = 1
+let g:solarized_termtrans=1
 
 " }}}
 
