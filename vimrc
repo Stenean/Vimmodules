@@ -277,7 +277,7 @@ augroup END
 
 " let g:solarized_termcolors = 256
 let g:solarized_extra_hi_groups = 1
-let g:solarized_termtrans=1
+" let g:solarized_termtrans=1
 
 " }}}
 
